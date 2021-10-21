@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios';
 
 
-export default () => {
+export const PostCreate = () => {
     const [title, setTitle] = useState('');
 
   const onSubmit = async (event) => {
@@ -20,7 +20,7 @@ export default () => {
     <div>
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <labe>Title</labe>
+                <label>Title</label>
                 <input
                 value={title}
                 onChange={e=> setTitle(e.target.value)}
